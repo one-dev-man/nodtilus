@@ -1,7 +1,7 @@
 import ArraysUtil from "./utils/arraysutil";
 import Await from "./utils/await";
 import FilesUtil from "./utils/filesutil";
-import { JsonTypeChecker } from "./utils/jsontypechecker";
+import { JsonTypeChecker, TYPES, TYPE_OPTIONS } from "./utils/jsontypechecker";
 import { Listener, StaticListener, ObjectListener } from "./utils/listener.class";
 import MapsUtil from "./utils/mapsutil";
 
@@ -10,7 +10,7 @@ const nodtilus = {
     await: Await,
     files: FilesUtil,
     json: {
-        type: {
+        types: {
             check: JsonTypeChecker
         }
     },
@@ -23,3 +23,6 @@ const nodtilus = {
 };
 
 export default nodtilus;
+
+export type NODTILUS_JSON_TYPES = TYPES;
+export type NODTILUS_JSON_TYPE_OPTIONS = TYPE_OPTIONS;
