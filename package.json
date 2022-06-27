@@ -1,6 +1,6 @@
 {
   "name": "nodtilus",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": ".dist/nodtilus.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "test": "node test/test"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "onedevman",
+  "license": "GNU-3.0",
   "devDependencies": {
     "@types/node": "^18.0.0"
   }
