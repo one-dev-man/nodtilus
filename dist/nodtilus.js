@@ -14,7 +14,7 @@ const nodtilus = {
     await: await_1.default,
     files: filesutil_1.default,
     json: {
-        type: {
+        types: {
             check: jsontypechecker_1.JsonTypeChecker
         }
     },
