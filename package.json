@@ -1,6 +1,6 @@
 {
   "name": "nodtilus",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "main": "./dist/nodtilus.js",
   "types": "./dist/nodtilus.d.ts",
