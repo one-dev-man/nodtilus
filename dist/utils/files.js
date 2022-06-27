@@ -22,10 +22,8 @@ class FilesUtil {
             fs_1.default.unlinkSync(p);
     }
     static delete(p) {
-        console.log(p);
         if (fs_1.default.statSync(p).isDirectory()) {
             if (fs_1.default.readdirSync(path_1.default.dirname(p)).length == 0) {
-                console.log(p);
                 this.rmrf(p);
             }
         }
