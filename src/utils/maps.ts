@@ -14,8 +14,8 @@ export default class MapsUtil {
             r[k] = (_a as any)[k] != undefined ? (_a as any)[k] : (_b as any)[k];
         };
 
-        Object.keys(_a).forEach(merge_callback);
-        Object.keys(_b).forEach(merge_callback);
+        Object.keys(_a as any).forEach(merge_callback);
+        Object.keys(_b as any).forEach(merge_callback);
 
         return r;
     }

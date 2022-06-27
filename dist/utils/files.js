@@ -22,14 +22,16 @@ class FilesUtil {
             fs_1.default.unlinkSync(p);
     }
     static delete(p) {
+        console.log(p);
         if (fs_1.default.statSync(p).isDirectory()) {
             if (fs_1.default.readdirSync(path_1.default.dirname(p)).length == 0) {
-                fs_1.default.rmdirSync(p);
+                console.log(p);
+                this.rmrf(p);
             }
         }
         else {
             fs_1.default.unlinkSync(p);
-            this.delete(p);
+            this.delete(path_1.default.dirname(p));
         }
     }
 }

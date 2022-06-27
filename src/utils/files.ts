@@ -18,14 +18,16 @@ export default class FilesUtil {
     }
 
     static delete(p: string) {
+        console.log(p);
         if(fs.statSync(p).isDirectory()) {
             if(fs.readdirSync(path.dirname(p)).length == 0) {
-                fs.rmdirSync(p);
+                console.log(p);
+                this.rmrf(p);
             }
         }
         else {
             fs.unlinkSync(p);
-            this.delete(p);
+            this.delete(path.dirname(p));
         }
     }
 
