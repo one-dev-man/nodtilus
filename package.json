@@ -1,0 +1,16 @@
+{
+  "name": "nodtilus",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".dist/nodtilus.js",
+  "scripts": {
+    "build": "tsc --build",
+    "test": "node test/test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.0.0"
+  }
+}
