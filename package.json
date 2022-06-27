@@ -1,8 +1,9 @@
 {
   "name": "nodtilus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "main": ".dist/nodtilus.js",
+  "main": "./dist/nodtilus.js",
+  "types": "./dist/nodtilus.d.ts",
   "scripts": {
     "build": "tsc --build",
     "test": "node test/test"
