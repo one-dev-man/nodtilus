@@ -17,4 +17,16 @@ export default class FilesUtil {
         else fs.unlinkSync(p);
     }
 
+    static delete(p: string) {
+        if(fs.statSync(p).isDirectory()) {
+            if(fs.readdirSync(path.dirname(p)).length == 0) {
+                fs.rmdirSync(p);
+            }
+        }
+        else {
+            fs.unlinkSync(p);
+            this.delete(p);
+        }
+    }
+
 }
