@@ -18,10 +18,8 @@ export default class FilesUtil {
     }
 
     static delete(p: string) {
-        console.log(p);
         if(fs.statSync(p).isDirectory()) {
             if(fs.readdirSync(path.dirname(p)).length == 0) {
-                console.log(p);
                 this.rmrf(p);
             }
         }
